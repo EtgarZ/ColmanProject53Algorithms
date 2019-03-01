@@ -84,8 +84,8 @@ def get_json_card_data(image_path):
     company = ""
     address = ""
     website = ""
-    data = {"personName": person_name, "phoneNumber": phone, "Company": company, "Address": address,
-            "Email": email,  "Website": website}
+    data = {"personName": person_name, "phoneNumber": phone, "company": company, "address": address,
+            "email": email,  "website": website}
     json_data = json.dumps(data)
     return json_data
 
@@ -103,6 +103,6 @@ def get_full_name(text):
 
 
 if __name__ == "__main__":
-    image_path = r'prototype_cards\card1.jpg'
+    image_path = r'prototype_cards\card2.jpg'
     json_data = get_json_card_data(image_path)
     print(json_data)
